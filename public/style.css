@@ -1,0 +1,42 @@
+/* Reset some default styles */
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Dark theme */
+body {
+  background-color: #2b2323;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 3%;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* border: 1px solid #333; */
+}
+
+.crypto-table th {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.crypto-table td {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.crypto-table th {
+  background-color: #333;
+  color: #fff;
+}

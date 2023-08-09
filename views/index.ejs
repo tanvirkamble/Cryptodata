@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>cryptoDATA</title>
+</head>
+
+<body>
+    <h1>Crypto Data</h1>
+    <div id="crypto-list">
+        <% let counter=1; %>
+            <table class="crypto-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>#</th>
+                        <th>Last</th>
+                        <th>Buy</th>
+                        <th>Sell</th>
+                        <th>Volume</th>
+                        <th>Base Unit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% data.forEach(item=> { %>
+                        <tr>
+                            <td>
+                                <%= counter %>
+                            </td>
+                            <td>
+                                <%= item.name %>
+                            </td>
+                            <td>
+                                <%= item.last %>
+                            </td>
+                            <td>
+                                <%= item.buy %>
+                            </td>
+                            <td>
+                                <%= item.sell %>
+                            </td>
+                            <td>
+                                <%= item.volume %>
+                            </td>
+                            <td>
+                                <%= item.base_unit %>
+                            </td>
+                        </tr>
+                        <% counter++; %>
+
+                            <% }); %>
+                </tbody>
+            </table>
+    </div>
+</body>
+
+</html>
